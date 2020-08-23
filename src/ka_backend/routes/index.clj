@@ -5,5 +5,5 @@
   (:require [ka_backend.routes.auth :refer (auth-handler)]))
 
 (def routes
-  ["/v1.0.0"
+  ["/v1.0"
    ["/auth" auth-handler]])

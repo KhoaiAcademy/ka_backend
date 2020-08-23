@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  postgres:
+    image: bitnami/postgresql:12
+    container_name: khoai_postgres
+    volumes:
+      - ./.persist/postgres:/bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=user
+      - POSTGRESQL_PASSWORD=123123123
+      - POSTGRESQL_DATABASE=kadb
+
+  redis:
+    image: bitnami/redis:6.0
+    container_name: khoai_redis
+    volumes:
+      - ./.persist/redis:/bitnami/redis/data
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_PASSWORD=123123123

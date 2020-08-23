@@ -9,7 +9,7 @@
             [reitit.ring.coercion :as coercion]
             [aero.core :refer (read-config)]
             [taoensso.timbre :as timbre])
-  (:require [ka_backend.routes.simple :as simple-route]
+  (:require [ka_backend.routes.index :as route-index]
             [ka_backend.config :refer (load-config is-dev? env)]))
 
 (def config
@@ -21,7 +21,7 @@
 (def handler
   (ring/ring-handler
     (ring/router
-      [simple-route/routes]
+      [route-index/routes]
       {:data {:muuntaja   m/instance
               :middleware [params/wrap-params
                            muuntaja/format-middleware

@@ -8,8 +8,8 @@
                  [ring/ring-devel "1.8.0"]
                  [com.taoensso/timbre "4.10.0"]
                  [aero "1.1.6"]]
-  :main ka-backend.core
-  :repl-options {:init-ns ka-backend.core}
+  :main ka_backend.core
+  :repl-options {:init-ns ka_backend.core}
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
              :user

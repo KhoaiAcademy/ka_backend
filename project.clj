@@ -7,6 +7,7 @@
                  [metosin/reitit "0.4.2"]
                  [ring/ring-devel "1.8.0"]
                  [com.taoensso/timbre "4.10.0"]
+                 [clj-postgresql "0.7.0"]
                  [aero "1.1.6"]]
   :main ka_backend.core
   :repl-options {:init-ns ka_backend.core}

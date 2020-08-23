@@ -13,12 +13,12 @@ services:
       - POSTGRESQL_PASSWORD=123123123
       - POSTGRESQL_DATABASE=kadb
 
-  redis:
-    image: bitnami/redis:6.0
-    container_name: khoai_redis
-    volumes:
-      - ./.persist/redis:/bitnami/redis/data
-    ports:
-      - 6379:6379
-    environment:
-      - REDIS_PASSWORD=123123123
+  # redis:
+  #   image: bitnami/redis:6.0
+  #   container_name: khoai_redis
+  #   volumes:
+  #     - ./.persist/redis:/bitnami/redis/data
+  #   ports:
+  #     - 6379:6379
+  #   environment:
+  #     - REDIS_PASSWORD=123123123

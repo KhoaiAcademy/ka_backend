@@ -11,7 +11,7 @@ $ git clone https://github.com/KhoaiAcademy/ka_backend.git
 ## Usage
 
 ```
-$ lein deps
+$ lein install
 ```
 
 ```

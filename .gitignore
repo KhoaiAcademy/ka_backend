@@ -11,3 +11,5 @@ pom.xml.asc
 .hgignore
 .hg/
 config.edn
+.persist/
+.cider-repl-history
